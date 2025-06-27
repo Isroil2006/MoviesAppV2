@@ -33,7 +33,7 @@
         <div class="container-fluid p-0">
           <div class="row g-0">
             <!-- Sidebar -->
-            <div class="col-md-2 bg-white border-end ">
+            <div class="col-md-2 bg-white border-end">
               <div class="p-3">
                 <div class="list-group list-group-flush" id="categoryList">
                   <button
@@ -149,7 +149,111 @@
         </div>
       </section>
 
-      <section class="register-section"></section>
+      <section class="register-section">
+        <div class="container mt-5">
+          <div class="row justify-content-start">
+            <div class="col-md-6 col-lg-5">
+              <h2 class="mb-4 mt-4">Register</h2>
+              <form class="register-form" id="registerForm" autocomplete="off">
+                <div class="mb-3">
+                  <label for="regName" class="form-label">Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="regName"
+                    name="name"
+                    placeholder="Ismingizni kiriting"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="regEmail" class="form-label">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="regEmail"
+                    name="email"
+                    placeholder="Email manzilini kiriting"
+                    required
+                  />
+                  <div id="regEmailError"></div>
+                </div>
+                <div class="mb-3">
+                  <label for="regPassword" class="form-label">Password</label>
+                  <div class="input-group">
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="regPassword"
+                      name="password"
+                      placeholder="Parolingizni kiriting"
+                      required
+                    />
+                    <button
+                      class="btn btn-outline-secondary"
+                      type="button"
+                      id="togglePassword"
+                    >
+                      <i class="fa fa-eye"></i>
+                    </button>
+                  </div>
+                  <div id="regPasswordError" class="text-danger"></div>
+                </div>
+                <button class="btn btn-primary" type="submit">
+                  Ro'yxatdan o'tish
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal for password usage confirmation -->
+        <div
+          class="modal fade"
+          id="autoPasswordModal"
+          tabindex="-1"
+          aria-labelledby="autoPasswordModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="autoPasswordModalLabel">
+                  Avtomatik parol
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Yopish"
+                ></button>
+              </div>
+              <div class="modal-body">
+                Siz uchun avtomatik parol yaratildi. Ushbu paroldan
+                foydalanasizmi?
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  id="acceptAutoPassword"
+                  data-bs-dismiss="modal"
+                >
+                  Ha
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  id="declineAutoPassword"
+                  data-bs-dismiss="modal"
+                >
+                  Yo'q
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   </body>
 
