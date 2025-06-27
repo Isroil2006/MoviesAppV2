@@ -1,21 +1,25 @@
 .movie-app {
-    display: block;
+  display: block;
 }
 
 .login-section {
-    display: none;
+  display: none;
+}
+
+.register-section {
+  display: none;
 }
 
 .navbar {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .nav-link {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .container {
-    max-width: 1400px;
-    margin: 0 auto;
-    height: 400px;
+  max-width: 1400px;
+  margin: 0 auto;
+  height: 400px;
 }

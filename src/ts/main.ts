@@ -139,18 +139,27 @@ function capitalize(word: string) {
 renderMovies();
 
 const loginBtn = document.querySelector(".login-btn") as HTMLButtonElement;
+const registerBtn = document.querySelector(
+  ".register-btn"
+) as HTMLButtonElement;
+const movieApp = document.querySelector(
+  ".movie-app"
+) as HTMLTableSectionElement;
+const loginSection = document.querySelector(
+  ".login-section"
+) as HTMLTableSectionElement;
+const registerSection = document.querySelector(
+  ".register-section"
+) as HTMLTableSectionElement;
 
 loginBtn.onclick = () => {
-  const movieApp = document.querySelector(
-    ".movie-app"
-  ) as HTMLTableSectionElement;
-
-  const loginSection = document.querySelector(
-    ".login-section"
-  ) as HTMLTableSectionElement;
-
-
-
   movieApp.style.display = "none";
+  registerSection.style.display = "none";
   loginSection.style.display = "block";
+};
+
+registerBtn.onclick = () => {
+  movieApp.style.display = "none";
+  loginSection.style.display = "none";
+  registerSection.style.display = "block";
 };
