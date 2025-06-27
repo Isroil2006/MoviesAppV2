@@ -1,0 +1,67 @@
+.begdiv {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  gap: 10px;
+}
+
+.login {
+  padding: 0;
+  margin: 0;
+  font-family: monospace;
+}
+
+.emil {
+  padding: 0;
+  margin: 0;
+  font-family: monospace;
+  margin-top: 20px;
+}
+
+.inputemil {
+  padding: 0;
+  margin: 0;
+  border-radius: 3px;
+  font-family: monospace;
+  text-align: center;
+  border: 1px solid darkblue;
+  outline: 1px springgreen;
+  height: 30px;
+}
+
+.pasword {
+  padding: 0;
+  margin: 0;
+  font-family: monospace;
+}
+
+.inputpasword {
+  padding: 0;
+  margin: 0;
+  border-radius: 3px;
+  font-family: monospace;
+  text-align: center;
+  border: 1px solid darkblue;
+  outline: none;
+  height: 30px;
+}
+
+.loginbtn {
+  width: 40px;
+  height: 20px;
+  padding: 0;
+  margin: 0;
+  font-family: monospace;
+  background-color: rgb(69, 150, 205);
+  border: none;
+  color: aliceblue;
+}
+
+.loginbtn:hover {
+  background-color: aqua;
+}
+
+.loginbtn:active {
+  background-color: black;
+}
