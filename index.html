@@ -3,18 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/login.css">
     <title>Document</title>
   </head>
   <body>
     <div class="container">
       <section class="movie-app"></section>
       <section class="login-section">
-        <div class=""><p>salom dunyo</p></div>
-        <div class=""><p>salom dunyo</p></div>
-        <div class=""><p>salom dunyo</p></div>
-        <div class=""><p>salom dunyo</p></div>
+
+        <div class="begdiv">
+          <h1 class="login">Login</h1>
+          <p class="emil">emil</p>
+          <input
+            class="inputemil"
+            type="email"
+            placeholder="Emilni kiriting "
+          />
+          <p class="pasword">pasword</p>
+          <input
+            class="inputpasword"
+            type="password"
+            placeholder="Paswordni kiriting"
+          />
+          <button class="loginbtn">login</button>
+        </div>
       </section>
       <section class="register-section"></section>
     </div>
   </body>
+  <script type="module" src="./src/ts/login.ts"></script>
 </html>
