@@ -1,0 +1,21 @@
+.movie-app {
+    display: block;
+}
+
+.login-section {
+    display: none;
+}
+
+.navbar {
+    margin-bottom: 30px;
+}
+
+.nav-link {
+    cursor: pointer;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    height: 400px;
+}
